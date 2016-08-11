@@ -7,6 +7,6 @@ defmodule Test do
       {am, [ head | tail ]} -> coin_com(am-head, [ head | tail ]) + coin_com(am, tail)
     end
   end
-
-  Test.coin_com(1000, [1,2,5])
 end
+
+IO.puts Test.coin_com(1000, [1,2,5])
